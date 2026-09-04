@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Varela+Round&display=swap');
+
 :root {
     --color-primary: red;
     --bg-dark:#141414;
     --text-color:#fff;
     --btn-color: rgb(156, 0, 0);
     --header-bg: rgba(0,0,0,0.8);
-    --linear-bg: linear-gradient(to right,aqua,purple);
+    --linear-bg: linear-gradient(to bottom, rgb(148, 0, 0), rgb(161, 0, 0), rgb(138, 2, 2), rgb(99, 0, 0), rgb(83, 2, 2));
 }
 
 * {
@@ -14,9 +16,11 @@
 }
 
 body {
-    background: var(--color-primary);
+    background: rgb(255, 0, 0);
     color: var(--text-color);
-    
+    font-family: "Archivo Black", sans-serif; 
+    font-weight: 400; 
+    font-style: normal;
 }
 
 header {
@@ -24,7 +28,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
-    background-color: var(--header-bg);
+    background-image: var(--linear-bg);
 }
 
 .logo {
@@ -71,7 +75,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--btn-color);
+    border-bottom: 2px solid white;
 }
 
 .menu-big {
@@ -89,6 +93,27 @@ nav ul li a:hover {
     background: var(--text-color);
     border: 1px solid red;
     border-radius: 10px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color: white;
+    padding: 10px;
+    border-top: 5px solid darkred;
+}
+
+.titulo h1 {
+    background: var(--linear-bg);
+    background-clip: text;
+    color: transparent;
+}
+
+.img-deco {
+    height: 100px;
+    margin: 0px 30px;
 }
 
 footer {
