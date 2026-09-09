@@ -16,7 +16,7 @@
 }
 
 body {
-    background: rgb(255, 0, 0);
+    background: var(--text-color);
     color: var(--text-color);
     font-family: "Archivo Black", sans-serif; 
     font-weight: 400; 
@@ -100,13 +100,13 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    background-color: white;
+    background-image: var(--linear-bg);
     padding: 10px;
     border-top: 5px solid darkred;
 }
 
 .titulo h1 {
-    background: var(--linear-bg);
+    background: var(--text-color);
     background-clip: text;
     color: transparent;
 }
