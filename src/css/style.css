@@ -95,6 +95,17 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgBanner {
+    width: 600px;
+    height: 600px;
+}
+
 .titulo {
     display: flex;
     justify-content: center;
